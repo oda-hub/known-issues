@@ -1,4 +1,4 @@
-# Known issues in ODA 21.11.0002
+# Known issues in ODA 21.10.0002
 
 * In rare cases (only one known so far, with catalog provided as file), URL provided in the email may not be processed correctly. In this case, some fields will be substituted, but other will not be. We expect to add a warning in such a case. https://github.com/oda-hub/frontend-astrooda/issues/98
 * It is not possible to change the Xspec model in the Fit of spectra. However, spectra can be downloaded and fit with another package.
