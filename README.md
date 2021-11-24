@@ -11,6 +11,8 @@
 * In some cases, especially for large observations with many sources and noisy obserations, ISGRI mosaic produces too many sources and mosaic extraction (standard OSA, which is used internally) crashes. This leads to an `AnalysisException` error. 
   * *Suggested workaround*: request energy range will less noise (e.g. start from 25 keV and not from 20 keV).
   * *Suggested workaround*: provide custom catalog, based on ISDC Reference Catalog.
+* Fractional numbers in energy ranges (e.g. 20.32 - number which do not align with "standard" energy bins used in background maps) cause a known issue in OSA. This is not specific to ODA. We choose not to provide a workaround in ODA, since it may misrepresent the users intent.
+  * *Suggested workaround*: please use more even energy ranges, e.g. 20.5 vs 20.32. Rounding ranges to 0.5 should work most of the time, except for the higher energies.
 
 ## JEM-X
 
